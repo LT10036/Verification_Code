@@ -20,6 +20,9 @@ a=[]
 
 # 打开图片，并解析
 l=Image.open('D://Documents//Downloads//123.bmp')
+# 识别汉字
+# text = pytesseract.image_to_string(l,lang='chi_sim',config=tessdata_dir_config)
+# 识别英文
 text = pytesseract.image_to_string(l,lang='eng',config=tessdata_dir_config)
 
 # 解析出来的文本有空格字符，需要解析下
